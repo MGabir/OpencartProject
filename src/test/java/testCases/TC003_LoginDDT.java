@@ -65,7 +65,7 @@ public class TC003_LoginDDT extends BaseClass {
 		{
 			Assert.fail();
 		}
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		
 		logger.info("*******Finished TC003_LoginDDT********");
 	}

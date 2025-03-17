@@ -33,6 +33,7 @@ public class ExtenntReportManager implements ITestListener
 		String currentdatetimestamp = df.format(dt);*/
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
+		// to avoid variables simple date format directly get the object by new simpledate format(yyyy,mm,dd,hh,mm,ss.format (new date())
 		repName = "Test-Report-"+timeStamp+".html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\"+ repName);
 		sparkReporter.config().setDocumentTitle(" operncart Automation Report"); // title of the report
@@ -47,15 +48,17 @@ public class ExtenntReportManager implements ITestListener
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
 		extent.setSystemInfo("Environment", "QA");
 		
+		// capture the operating system values form the master.xml to set the system information and os in the report
 		String os = context.getCurrentXmlTest().getParameter("os");
 		extent.setSystemInfo("Operating System", os);
 		
 		String browser = context.getCurrentXmlTest().getParameter("browser");
 		extent.setSystemInfo("browser", browser);
 		
-		List<String> includedGroups = context.getCurrentXmlTest().getIncludedGroups();
-		if(!includedGroups.isEmpty()) { // if the list is not empty
-			extent.setSystemInfo("Groups", includedGroups.toString());// print the value in the report
+		//capture the group name form the xml file and display them in the report.
+		List<String> includedGroups = context.getCurrentXmlTest().getIncludedGroups();// capture all the group names and store them in a list of collection.
+		if(!includedGroups.isEmpty()) { // if the list is not empty capture the value 
+			extent.setSystemInfo("Groups", includedGroups.toString());// and print the value in the report
 		}
 	  }
 	
@@ -64,7 +67,7 @@ public class ExtenntReportManager implements ITestListener
 	  }*/
 	
 	public void onTestSuccess(ITestResult result) {
-		test = extent.createTest(result.getTestClass().getName()); // get the test class name
+		test = extent.createTest(result.getTestClass().getName()); //from the rest what class executed get the result and  get the test class name
 		test.assignCategory(result.getMethod().getGroups());// to display groups in report
 		test.log(Status.PASS, result.getName()+"got successfully executed"); // update status p/f/s
 	  }
@@ -80,7 +83,7 @@ public class ExtenntReportManager implements ITestListener
 			test.addScreenCaptureFromBase64String(imgPath);
 		}catch(IOException e1)
 		{
-			e1.printStackTrace();
+			e1.printStackTrace(); // it will print the error message in the console
 		}
 	}
 	
@@ -99,11 +102,11 @@ public class ExtenntReportManager implements ITestListener
 		
 		try
 		{
-			Desktop.getDesktop().browse(extentReport.toURI());
+			Desktop.getDesktop().browse(extentReport.toURI()); // will auto open the browser 
 		}
 		catch(IOException e)
 		{
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 	  }
 	

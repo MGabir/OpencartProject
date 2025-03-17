@@ -1,0 +1,57 @@
+21:06:45:197 [1] INFO  testCases.TC003_LoginDDT - *******Finished TC003_LoginDDT********
+21:06:45:210 [1] INFO  testCases.TC003_LoginDDT - *******Starting TC003_LoginDDT********
+02:57:24:453 [1] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\MOHANED_GABIR\OneDrive - MMU\Desktop\Automation Project\01-2025 workspace eclips\Advprog assignment\grouping.xml
+
+02:57:29:565 [1] INFO  testCases.TC_AccountRegistrationTest - *******Starting TC_AccountRegistrationTest********
+02:57:29:687 [1] INFO  testCases.TC_AccountRegistrationTest - clicked on my account link........
+02:57:30:219 [1] INFO  testCases.TC_AccountRegistrationTest - clicked on the regester from the drop down......
+02:57:30:221 [1] INFO  testCases.TC_AccountRegistrationTest - Providing customer details........
+02:57:32:424 [1] INFO  testCases.TC_AccountRegistrationTest - validating expected message...
+02:57:32:460 [1] INFO  testCases.TC_AccountRegistrationTest - *******Finishing the TC_AccountRegistrationTest********
+02:57:35:215 [1] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest********
+02:57:36:611 [1] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest********
+02:58:50:906 [1] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\MOHANED_GABIR\OneDrive - MMU\Desktop\Automation Project\01-2025 workspace eclips\Advprog assignment\grouping.xml
+
+02:58:54:400 [1] INFO  testCases.TC_AccountRegistrationTest - *******Starting TC_AccountRegistrationTest********
+02:58:54:597 [1] INFO  testCases.TC_AccountRegistrationTest - clicked on my account link........
+02:58:55:172 [1] INFO  testCases.TC_AccountRegistrationTest - clicked on the regester from the drop down......
+02:58:55:176 [1] INFO  testCases.TC_AccountRegistrationTest - Providing customer details........
+02:58:57:535 [1] INFO  testCases.TC_AccountRegistrationTest - validating expected message...
+02:58:57:581 [1] INFO  testCases.TC_AccountRegistrationTest - *******Finishing the TC_AccountRegistrationTest********
+02:59:00:308 [1] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest********
+03:05:35:522 [1] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\MOHANED_GABIR\OneDrive - MMU\Desktop\Automation Project\01-2025 workspace eclips\Advprog assignment\test-output\testng-failed.xml
+
+03:05:39:360 [1] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest********
+03:05:40:908 [1] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest********
+23:37:47:751 [1] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\MOHANED_GABIR\OneDrive - MMU\Desktop\Automation Project\01-2025 workspace eclips\Advprog assignment\master.xml
+
+23:37:53:719 [1] INFO  testCases.TC003_LoginDDT - *******Starting TC003_LoginDDT********
+23:37:57:102 [1] INFO  testCases.TC003_LoginDDT - *******Finished TC003_LoginDDT********
+23:37:57:116 [1] INFO  testCases.TC003_LoginDDT - *******Starting TC003_LoginDDT********
+23:38:13:294 [1] INFO  testCases.TC003_LoginDDT - *******Finished TC003_LoginDDT********
+23:38:13:298 [1] INFO  testCases.TC003_LoginDDT - *******Starting TC003_LoginDDT********
+23:38:25:280 [1] INFO  testCases.TC003_LoginDDT - *******Finished TC003_LoginDDT********
+23:38:25:284 [1] INFO  testCases.TC003_LoginDDT - *******Starting TC003_LoginDDT********
+23:38:37:722 [1] INFO  testCases.TC003_LoginDDT - *******Finished TC003_LoginDDT********
+23:38:37:727 [1] INFO  testCases.TC003_LoginDDT - *******Starting TC003_LoginDDT********
+23:39:26:101 [1] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\MOHANED_GABIR\OneDrive - MMU\Desktop\Automation Project\01-2025 workspace eclips\Advprog assignment\master.xml
+
+23:39:29:838 [1] INFO  testCases.TC_AccountRegistrationTest - *******Starting TC_AccountRegistrationTest********
+23:39:30:058 [1] INFO  testCases.TC_AccountRegistrationTest - clicked on my account link........
+23:39:30:659 [1] INFO  testCases.TC_AccountRegistrationTest - clicked on the regester from the drop down......
+23:39:30:665 [1] INFO  testCases.TC_AccountRegistrationTest - Providing customer details........
+23:39:33:097 [1] INFO  testCases.TC_AccountRegistrationTest - validating expected message...
+23:39:33:143 [1] INFO  testCases.TC_AccountRegistrationTest - *******Finishing the TC_AccountRegistrationTest********
+23:39:36:134 [1] INFO  testCases.TC002_LoginTest - *******Starting TC002_LoginTest********
+23:39:37:844 [1] INFO  testCases.TC002_LoginTest - *******Finished TC002_LoginTest********
+23:40:58:855 [1] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\MOHANED_GABIR\OneDrive - MMU\Desktop\Automation Project\01-2025 workspace eclips\Advprog assignment\crossbrowsertesting.xml
+
+23:41:02:611 [31] INFO  testCases.TC_AccountRegistrationTest - *******Starting TC_AccountRegistrationTest********
+23:41:02:756 [31] INFO  testCases.TC_AccountRegistrationTest - clicked on my account link........
+23:41:03:593 [31] INFO  testCases.TC_AccountRegistrationTest - clicked on the regester from the drop down......

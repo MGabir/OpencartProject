@@ -12,3 +12,4 @@ public class BasePage {
 	}
 
 }
+// this is the parent of all the object class need to be called in them.

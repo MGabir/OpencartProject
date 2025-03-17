@@ -1,5 +1,5 @@
 version:'3'
-# to run it use this command docker-compose up or down to close it.
+# to run it use this command docker-compose up to run or down to close it. get the location and past it in the commnad promot
 
 services:
 	selenium-hub:

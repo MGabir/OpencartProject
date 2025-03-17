@@ -6,10 +6,10 @@
 <suite name="Suite" thread-count="5" parallel="tests">
 
 	<listeners>
-		<listener class-name="utilites.ExtentReportManager"/>
+		<listener class-name="utilities.ExtenntReportManager"/>
 	</listeners>
 	
-  <test name="Test">
+  <test name="chromeTest">
   
   <parameter name="os" value="Windows"/>
   <parameter name="browser" value="chrome"/>
@@ -27,7 +27,7 @@
   
   
     <classes>
-      <class name="testCases.TC_AccountRegistrationTest"/>
+      <class name="testCases.TC002_LoginTest"/>
     </classes>
   </test> <!-- Test -->
   

@@ -8,7 +8,7 @@ public class HomePage extends BasePage{
 	
 	public HomePage(WebDriver driver)
 	{
-		super(driver); // super it will invoke immediate parent class constructor
+		super(driver); // super it will invoke immediate parent class constructor getting the constructor from basePage
 	}
 	
 	@FindBy(xpath="//span[normalize-space()='My Account']") WebElement lnkMyaccount;

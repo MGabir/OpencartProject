@@ -26,7 +26,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 public static WebDriver driver;
-public Logger logger; // for log4j
+public Logger logger; // public variable for log4j
 public Properties p;  // for getting the information from the properties class
 	
 	@BeforeClass(groups= {"Sanity", "Regression","Master"} )
@@ -41,9 +41,9 @@ public Properties p;  // for getting the information from the properties class
 		
 		logger = LogManager.getLogger(this.getClass());
 		
-		if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
+		if(p.getProperty("execution_env").equalsIgnoreCase("remote")) // getting the remote running environment from properties file
 		{
-			DesiredCapabilities capabilities = new DesiredCapabilities();
+			DesiredCapabilities capabilities = new DesiredCapabilities();// create class for desired capabilities 
 			//operating system os
 			if(os.equalsIgnoreCase("windows"))
 			{
@@ -64,7 +64,7 @@ public Properties p;  // for getting the information from the properties class
 			}
 			
 			//browser
-			switch(browser.toLowerCase())
+			switch(browser.toLowerCase()) // taking the browser from the xml file
 			{
 			case "chrome": capabilities.setBrowserName("chrome"); break;
 			case "edge": capabilities.setBrowserName("MicrosoftEdge"); break;
@@ -75,13 +75,13 @@ public Properties p;  // for getting the information from the properties class
 		} 
 		
 		
-		if(p.getProperty("execution_env").equalsIgnoreCase("local"))
+		if(p.getProperty("execution_env").equalsIgnoreCase("local")) // getting the local running environment from properties file
 		{
 			switch(browser.toLowerCase())
 			{
 				case"chrome":driver = new ChromeDriver(); break;
 				case"edge":driver = new EdgeDriver(); break;
-				default : System.out.println("Invalid browser name..."); return;
+				default : System.out.println("Invalid browser name..."); return; // will exit from the excution.
 			}
 		}
 		
@@ -105,8 +105,8 @@ public Properties p;  // for getting the information from the properties class
 	
 	public String randomeNumber()
 	{
-		String generatednumber =RandomStringUtils.randomNumeric(10);
-		return generatednumber;
+		String generatednumber =RandomStringUtils.randomNumeric(9);
+		return "0"+generatednumber;
 	}
 	public String randomeAlphaNumber()
 	{

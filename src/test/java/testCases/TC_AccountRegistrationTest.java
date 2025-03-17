@@ -18,24 +18,29 @@ public class TC_AccountRegistrationTest extends BaseClass {
 		
 		try
 		{
-		
-		HomePage hp = new HomePage(driver);
+		//create home page object so we can get access to login actions
+		HomePage hp = new HomePage(driver);// pass the driver to invoke at the run time.
 		hp.clickMyAccount();
 		logger.info("clicked on my account link........");
 		hp.clickRegister();
 		logger.info("clicked on the regester from the drop down......");
 		
-		accountRegistrationPage regpage = new accountRegistrationPage(driver);
+		//create account registration page object to get access to registration action.
+		accountRegistrationPage regpage = new accountRegistrationPage(driver);// again pass the driver to invoke at the run time.
 		logger.info("Providing customer details........");
+		// pass data dynamically.
 		regpage.setFirstName(randomeString().toUpperCase());
 		regpage.setLastName(randomeString().toUpperCase());
 		regpage.setEmail(randomeString()+"@gmail.com");
 		regpage.setTelephone(randomeNumber());
+		
+		// capture the value and pass it in the password filed to match password 
 		String passowrd = randomeAlphaNumber();
 		regpage.sedPassword(passowrd);
 		regpage.sedConfirmPassword(passowrd);
+		
 		regpage.setPrivacyPolicy();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		regpage.clickContinue();
 		
 		logger.info("validating expected message...");
